@@ -14,3 +14,10 @@ VBA Script file: "stock_data_solution.vbs"
 
 Resulting Spreadsheet: "Multiple_year_stock_data.xlsm"
 Original Spreadsheet: "Multiple_year_stock_data.xlsx"
+
+## Module 3 Challenge
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod3" directory
+PyBank files: "/PyBank/main.py", "/PyBank/analysis/summary.txt"
+PyPoll files: "/PyPoll/main.py", "/PyPoll/analysis/summary.txt"
+
+Original spreadsheets: "/PyBank/Resources/budget_data.csv", "/PyPoll/Resources/election_data.csv"
