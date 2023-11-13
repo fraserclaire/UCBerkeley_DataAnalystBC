@@ -23,3 +23,11 @@ PyBank files: "/PyBank/main.py", "/PyBank/analysis/summary.txt"
 PyPoll files: "/PyPoll/main.py", "/PyPoll/analysis/summary.txt"
 
 Original spreadsheets: "/PyBank/Resources/budget_data.csv", "/PyPoll/Resources/election_data.csv"
+
+## Module 4 Challenge
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod4" directory
+Jupyter Notebook file: "/PyCitySchools/PyCitySchools_complete.ipynb"
+
+Written Summary: "/PyCitySchools/ClaireFraser_Module4Challenge.docx"
+
+Original data: "/Resources/schools_complete.csv", "/Resources/students_complete.csv"
