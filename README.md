@@ -34,6 +34,6 @@ Original data: "/Resources/schools_complete.csv", "/Resources/students_complete.
 
 ## Module 5 Challenge
 ### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod5" directory
-Jupyter Notebook file: "/Pymaceuticals/pymaceuticals_complete.ipynb"
+Jupyter Notebook file: "pymaceuticals_complete.ipynb"
 
-Original data: "/Pymaceuticals/data/Mouse_metadata.csv", "/Pymaceuticals/data/Study_results.csv"
+Original data: "data/Mouse_metadata.csv", "data/Study_results.csv"
