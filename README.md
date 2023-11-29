@@ -39,7 +39,7 @@ Jupyter Notebook file: "pymaceuticals_complete.ipynb"
 Original data: "data/Mouse_metadata.csv", "data/Study_results.csv"
 
 ## Module 6 Challenge
-### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod5" directory
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod6" directory
 Jupyter Notebook files: "WeatherPy_complete.ipynb", "VacationPy_complete.ipynb"
 
 Output data: "output_data/cities.csv", "output_data/Fig1.png", "output_data/Fig2.png", "output_data/Fig3.png", "output_data/Fig4.png"
