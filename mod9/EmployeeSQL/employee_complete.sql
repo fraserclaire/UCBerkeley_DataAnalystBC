@@ -116,12 +116,30 @@ managers.emp_no = employees.emp_no;
 	
 -- 4. List the department number for each employee along with that employee’s employee number, 
 -- last name, first name, and department name.
+select departments.dept_no,
+	Employees.emp_no,
+	Employees.last_name,
+	Employees.first_name,
+	departments.dept_name
+from Employees
+INNER JOIN departments_employees ON
+Employees.emp_no = departments_employees.emp_no
+INNER JOIN departments ON
+departments_employees.dept_no = departments.dept_no;
+
 	
 -- 5. List first name, last name, and sex of each employee whose first name is Hercules and
 -- whose last name begins with the letter B.
+select Employees.first_name,
+	Employees.last_name,
+	Employees.sex
+from Employees
+WHERE Employees.first_name = 'Hercules'
+AND Employees.last_name LIKE 'B%';
 
 -- 6. List each employee in the Sales department, including their employee number, last name, 
 -- and first name.
+
 
 -- 7. List each employee in the Sales and Development departments, including their employee number, 
 -- last name, first name, and department name.
