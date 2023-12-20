@@ -43,3 +43,12 @@ Original data: "data/Mouse_metadata.csv", "data/Study_results.csv"
 Jupyter Notebook files: "WeatherPy_complete.ipynb", "VacationPy_complete.ipynb"
 
 Output data: "output_data/cities.csv", "output_data/Fig1.png", "output_data/Fig2.png", "output_data/Fig3.png", "output_data/Fig4.png"
+
+## Module 9 Challenge
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod9" directory
+Entity Relationship Diagram (ERD) image: 
+![alt text ](https://github.com/fraserclaire/UCBerkeley_DataAnalystBC/blob/main/mod9/EmployeeSQL/erd_v2.png?raw=true)
+
+Table Schemata: "table_schema.sql"
+
+Queries: "employee_queries.sql"
