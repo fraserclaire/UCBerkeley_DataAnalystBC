@@ -46,8 +46,7 @@ Output data: "output_data/cities.csv", "output_data/Fig1.png", "output_data/Fig2
 
 ## Module 9 Challenge
 ### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod9" directory
-Entity Relationship Diagram (ERD) image: 
-![alt text ](https://github.com/fraserclaire/UCBerkeley_DataAnalystBC/blob/main/mod9/EmployeeSQL/erd_v2.png?raw=true)
+Entity Relationship Diagram (ERD) image: "erd_v5.png"
 
 Table Schemata: "table_schema.sql"
 
