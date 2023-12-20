@@ -76,6 +76,7 @@ select * from Managers;
 select * from Departments;
 select * from Departments_Employees;
 
+-- 1. List the employee number, last name, first name, sex, and salary of each employee.
 select Employees.emp_no, 
 	Employees.last_name,
 	Employees.first_name,
@@ -84,8 +85,47 @@ select Employees.emp_no,
 from Employees
 INNER JOIN salaries ON
 salaries.emp_no = Employees.emp_no;
+
+-- 2. List the first name, last name, and hire date for the employees who were hired in 1986.
+select Employees.first_name,
+	Employees.last_name,
+	Employees.hire_date
+from Employees
+INNER JOIN salaries ON
+salaries.emp_no = Employees.emp_no
+WHERE extract(year from to_date(employees.hire_date, 'MM/DD/YYYY')) = 1986;
+
+
+-- 3. List the manager of each department along with their department number, 
+-- department name, employee number, last name, and first name.
+select managers.emp_no as Manager_emp_no,
+	managers.dept_no,
+	departments.dept_name,
+	departments_employees.emp_no,
+	Employees.emp_no,
+	Employees.last_name,
+	Employees.first_name
+from managers
+INNER JOIN departments_employees ON
+managers.dept_no = departments_employees.dept_no
+INNER JOIN departments ON
+managers.dept_no = departments.dept_no
+INNER JOIN employees ON
+managers.emp_no = employees.emp_no;
+
 	
+-- 4. List the department number for each employee along with that employee’s employee number, 
+-- last name, first name, and department name.
 	
-	
-	
-	
+-- 5. List first name, last name, and sex of each employee whose first name is Hercules and
+-- whose last name begins with the letter B.
+
+-- 6. List each employee in the Sales department, including their employee number, last name, 
+-- and first name.
+
+-- 7. List each employee in the Sales and Development departments, including their employee number, 
+-- last name, first name, and department name.
+
+-- 8. List the frequency counts, in descending order, of all the employee last names 
+-- (that is, how many employees share each last name).
+
