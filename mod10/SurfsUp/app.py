@@ -48,8 +48,8 @@ def welcome():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/2016-08-23<br/>"
-        f"/api/v1.0/2016-08-23/2017-08-23"
+        f"Input date of interest ('%Y-%m-%d'): /api/v1.0/<start><br/>"
+        f"Input date range of interest ('%Y-%m-%d'): /api/v1.0/<start>/<end>"
     )
 
 @app.route("/api/v1.0/precipitation")
@@ -103,17 +103,17 @@ def tobs():
     diction2 = pandas_last_year_temps[columns].to_dict(orient='records')
     return jsonify(diction2)
 
-@app.route("/api/v1.0/2016-08-23")
-def start():
-    start_data = session.query(func.min(measurement.tobs), func.max(measurement.tobs), func.avg(measurement.tobs)).filter(measurement.date == '2016-08-23').all()
+@app.route("/api/v1.0/<start_date>")
+def get_start(start_date):
+    start_data = session.query(func.min(measurement.tobs), func.max(measurement.tobs), func.avg(measurement.tobs)).filter(measurement.date == start_date).all()
     start_data_df = pd.DataFrame(start_data, columns=['TMIN', 'TMAX', 'TAVG'])
     columns=['TMIN', 'TMAX', 'TAVG']
     diction3 = start_data_df[columns].to_dict(orient='records')
     return jsonify(diction3)
 
-@app.route("/api/v1.0/2016-08-23/2017-08-23")
-def startend():
-    start_data = session.query(func.min(measurement.tobs), func.max(measurement.tobs), func.avg(measurement.tobs)).filter(measurement.date > '2016-08-23').all()
+@app.route("/api/v1.0/<start_date>/<end_date>")
+def startend(start_date, end_date):
+    start_data = session.query(func.min(measurement.tobs), func.max(measurement.tobs), func.avg(measurement.tobs)).filter(measurement.date.between(start_date, end_date)).all()
     start_data_df = pd.DataFrame(start_data, columns=['TMIN', 'TMAX', 'TAVG'])
     columns=['TMIN', 'TMAX', 'TAVG']
     diction4 = start_data_df[columns].to_dict(orient='records')

@@ -45,9 +45,17 @@ Jupyter Notebook files: "WeatherPy_complete.ipynb", "VacationPy_complete.ipynb"
 Output data: "output_data/cities.csv", "output_data/Fig1.png", "output_data/Fig2.png", "output_data/Fig3.png", "output_data/Fig4.png"
 
 ## Module 9 Challenge
-### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod9" directory
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod9/EmployeeSQL" directory
 Entity Relationship Diagram (ERD) image: "erd_v5.png"
 
 Table Schemata: "table_schema.sql"
 
 Queries: "employee_queries.sql"
+
+##Module 10 Challenge
+### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod10/SurfsUp" directory
+Jupyter Notebook file: "climate_complete.ipynb"
+
+Python Climate App: "app.py"
+
+Original data: "/Resources/hawaii.sqlite"
