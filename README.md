@@ -52,7 +52,7 @@ Table Schemata: "table_schema.sql"
 
 Queries: "employee_queries.sql"
 
-##Module 10 Challenge
+## Module 10 Challenge
 ### Within "/fraserclaire/UCBerkeley_DataAnalystBC/mod10/SurfsUp" directory
 Jupyter Notebook file: "climate_complete.ipynb"
 
